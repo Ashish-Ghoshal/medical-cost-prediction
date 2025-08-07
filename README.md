@@ -8,32 +8,28 @@ This repository presents a comprehensive machine learning project aimed at predi
 
 # 
 
-1.  [🌟 Features](https://www.google.com/search?q=%23-features "null")
-    
-2.  [🛠️ Technologies and Libraries](https://www.google.com/search?q=%23-technologies-and-libraries "null")
-    
-3.  [📂 Project Structure](https://www.google.com/search?q=%23-project-structure "null")
-    
-4.  [🚀 Setup and Installation](https://www.google.com/search?q=%23-setup-and-installation "null")
-    
-5.  [🧠 Usage](https://www.google.com/search?q=%23-usage "null")
-    
-    *   [Running the Project Locally](https://www.google.com/search?q=%23running-the-project-locally "null")
-        
-    *   [Interpreting Results](https://www.google.com/search?q=%23interpreting-results "null")
-        
-    *   [Using Pre-trained Models for Prediction](https://www.google.com/search?q=%23using-pre-trained-models-for-prediction "null")
-        
-6.  [📊 Performance Summary](https://www.google.com/search?q=%23-performance-summary "null")
-    
-7.  [🔍 Model Interpretability (SHAP)](https://www.google.com/search?q=%23-model-interpretability-shap "null")
-    
-8.  [🚀 Future Enhancements](https://www.google.com/search?q=%23-future-enhancements "null")
-    
-9.  [🤝 Contributing](https://www.google.com/search?q=%23-contributing "null")
-    
-10.  [📜 License](https://www.google.com/search?q=%23-license "null")
-    
+1.  [🌟 Features](#features)
+
+2.  [🛠️ Technologies and Libraries](#technologies-and-libraries)
+
+3.  [📂 Project Structure](#project-structure)
+
+4.  [🚀 Setup and Installation](#setup-and-installation)
+
+5.  [🧠 Usage](#usage)
+    * [Running the Project Locally](#running-the-project-locally)
+    * [Interpreting Results](#interpreting-results)
+    * [Using Pre-trained Models for Prediction](#using-pre-trained-models-for-prediction)
+
+6.  [📊 Performance Summary](#performance-summary)
+
+7.  [🔍 Model Interpretability (SHAP)](#model-interpretability-shap)
+
+8.  [🚀 Future Enhancements](#future-enhancements)
+
+9.  [🤝 Contributing](#contributing)
+
+10. [📜 License](#license)
 
 ## 🌟 Features
 
