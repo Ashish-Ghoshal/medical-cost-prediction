@@ -236,7 +236,6 @@ if __name__ == "__main__":
     FEATURES_FOR_ENGINEERING = ['age', 'bmi'] # Features to create polynomial/interaction terms from
 
     # Define directories for models and results (will be created if they don't exist)
-    # CHANGE v3: Using versioned folders for models and results
     MODELS_DIR = 'models_v3'
     RESULTS_DIR = 'results_v3'
 
@@ -279,9 +278,7 @@ if __name__ == "__main__":
             MODELS_DIR, RESULTS_DIR
         )
 
-        # ADDITION v5: Generate SHAP explanations for the best overall model
-        # Based on previous analysis, RandomForest_Tuned (from advanced tuning) had the best MAE.
-        # We'll use this model for SHAP.
+        
         best_overall_model_name = 'RandomForest_Tuned'
         if best_overall_model_name in best_tuned_models:
             best_overall_model = best_tuned_models[best_overall_model_name]

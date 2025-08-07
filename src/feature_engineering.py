@@ -19,12 +19,10 @@ def perform_feature_engineering(df: pd.DataFrame, features_to_engineer: list, re
     print("\n--- Starting Feature Engineering ---")
     fe_insights = {}
 
-    # Select only the features that are numerical and relevant for engineering
-    # Ensure features_to_engineer are present in the DataFrame's columns
+    # Check if there are features to engineer
     selected_features_df = df[features_to_engineer]
 
-    # Create Polynomial Features (degree 2 for simplicity)
-    # This will create polynomial features (e.g., feature^2) and interaction terms (e.g., feature1 * feature2)
+    
     poly = PolynomialFeatures(degree=2, include_bias=False)
     
     poly_features = poly.fit_transform(selected_features_df)
@@ -33,9 +31,7 @@ def perform_feature_engineering(df: pd.DataFrame, features_to_engineer: list, re
     # Create a DataFrame for the new polynomial features
     poly_df = pd.DataFrame(poly_features, columns=poly_feature_names, index=df.index)
 
-    # Drop original features that are now represented by polynomial features to avoid multicollinearity
-    # and then concatenate with the new features.
-    # We only drop them if they are part of the `features_to_engineer` list.
+    # Drop original features that were engineered and concatenate new polynomial features
     df_engineered = df.drop(columns=features_to_engineer, errors='ignore').copy()
     df_engineered = pd.concat([df_engineered, poly_df], axis=1)
 

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import os
-import shap # ADDITION v5: Import SHAP library
+import shap 
 
 def evaluate_model_performance(y_true: pd.Series, y_pred: np.array, model_name: str) -> dict:
     """
@@ -101,14 +101,14 @@ def plot_model_comparison(all_model_results: dict, results_dir: str):
     plt.title('Comparison of Model R2 Scores on Test Data (Original Scale)')
     plt.xlabel('R2 Score')
     plt.ylabel('Model')
-    plt.xlim(0, 1) # R2 score is typically between 0 and 1
+    plt.xlim(0, 1) 
     plt.grid(axis='x', linestyle='--', alpha=0.7)
     plt.tight_layout()
     plt.savefig(os.path.join(results_dir, 'model_r2_comparison.png'))
     plt.close()
     print(f"Saved Model R2 Comparison plot to {results_dir}/model_r2_comparison.png")
 
-# ADDITION v5: Function to generate SHAP explanation plots
+
 def plot_shap_explanations(model, X_data: pd.DataFrame, results_dir: str, model_name: str):
     """
     Generates SHAP summary plot and dependence plots for a given model.
@@ -135,8 +135,7 @@ def plot_shap_explanations(model, X_data: pd.DataFrame, results_dir: str, model_
         plt.close()
         print(f"Saved SHAP summary plot for {model_name} to {results_dir}")
 
-        # SHAP Dependence Plot for the most important feature (optional, but illustrative)
-        # Find the most important feature from the summary plot
+        
         if isinstance(shap_values, list): # For multi-output models like some tree-based
             avg_abs_shap_values = np.abs(shap_values[0]).mean(0)
         else:

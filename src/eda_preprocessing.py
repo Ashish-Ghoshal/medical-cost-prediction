@@ -24,7 +24,7 @@ def perform_eda(df: pd.DataFrame, numerical_cols: list, categorical_cols: list, 
 
     # Basic information
     print("DataFrame Info:")
-    # FIX: Correctly capture df.info() output using io.StringIO
+
     buffer = io.StringIO()
     df.info(verbose=True, show_counts=True, buf=buffer)
     eda_insights['info'] = buffer.getvalue()
@@ -120,15 +120,12 @@ def preprocess_data(df: pd.DataFrame, numerical_cols: list, categorical_cols: li
     X = df.drop(columns=[target_col])
     y = df[target_col]
 
-    # CHANGE v3: Apply log transformation to the target variable 'y'
-    # np.log1p(x) computes log(1+x), which is safer than log(x) if x can be 0 or very small.
+    
     print(f"Applying log transformation to the target variable '{target_col}'...")
     y = np.log1p(y)
     print(f"Target variable '{target_col}' transformed. First 5 values: {y.head().tolist()}")
 
-    # Create a column transformer for preprocessing
-    # Numerical features will be scaled
-    # Categorical features will be one-hot encoded
+    # Create a ColumnTransformer for preprocessing
     preprocessor = ColumnTransformer(
         transformers=[
             ('num', StandardScaler(), numerical_cols),
