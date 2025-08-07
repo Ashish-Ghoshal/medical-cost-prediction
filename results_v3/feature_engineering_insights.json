@@ -1,0 +1,10 @@
+{
+    "engineered_features_count": 5,
+    "engineered_feature_names": [
+        "age",
+        "bmi",
+        "age^2",
+        "age bmi",
+        "bmi^2"
+    ]
+}

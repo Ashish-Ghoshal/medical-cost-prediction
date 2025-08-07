@@ -1,0 +1,63 @@
+{
+    "Linear Regression": {
+        "best_params": {
+            "fit_intercept": true
+        },
+        "cv_r2_score": 0.7543038353996551,
+        "test_metrics": {
+            "MAE": 3872.380038918881,
+            "MSE": 57915586.65105005,
+            "R2": 0.6269496948893334
+        }
+    },
+    "Random Forest": {
+        "best_params": {
+            "max_depth": 10,
+            "n_estimators": 100
+        },
+        "cv_r2_score": 0.803556085866828,
+        "test_metrics": {
+            "MAE": 2097.7425881063787,
+            "MSE": 19458278.293754607,
+            "R2": 0.8746638500245286
+        }
+    },
+    "XGBoost": {
+        "best_params": {
+            "learning_rate": 0.05,
+            "max_depth": 3,
+            "n_estimators": 100
+        },
+        "cv_r2_score": 0.8254238689515375,
+        "test_metrics": {
+            "MAE": 1997.872996677413,
+            "MSE": 19432215.69493278,
+            "R2": 0.8748317264288727
+        }
+    },
+    "SVR": {
+        "best_params": {
+            "C": 1,
+            "gamma": "auto",
+            "kernel": "rbf"
+        },
+        "cv_r2_score": 0.8072015253344478,
+        "test_metrics": {
+            "MAE": 2527.6335063527767,
+            "MSE": 35642934.9436343,
+            "R2": 0.7704140020910704
+        }
+    },
+    "KNeighbors": {
+        "best_params": {
+            "n_neighbors": 5,
+            "weights": "distance"
+        },
+        "cv_r2_score": 0.6946321242581881,
+        "test_metrics": {
+            "MAE": 3952.8761430123072,
+            "MSE": 58174610.11501503,
+            "R2": 0.6252812531476455
+        }
+    }
+}

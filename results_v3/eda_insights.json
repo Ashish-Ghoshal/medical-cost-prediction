@@ -1,0 +1,46 @@
+{
+    "info": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 1338 entries, 0 to 1337\nData columns (total 7 columns):\n #   Column    Non-Null Count  Dtype  \n---  ------    --------------  -----  \n 0   age       1338 non-null   int64  \n 1   sex       1338 non-null   object \n 2   bmi       1338 non-null   float64\n 3   children  1338 non-null   int64  \n 4   smoker    1338 non-null   object \n 5   region    1338 non-null   object \n 6   charges   1338 non-null   float64\ndtypes: float64(2), int64(2), object(3)\nmemory usage: 73.3+ KB\n",
+    "descriptive_statistics": {
+        "age": {
+            "count": 1338.0,
+            "mean": 39.20702541106129,
+            "std": 14.049960379216154,
+            "min": 18.0,
+            "25%": 27.0,
+            "50%": 39.0,
+            "75%": 51.0,
+            "max": 64.0
+        },
+        "bmi": {
+            "count": 1338.0,
+            "mean": 30.66339686098655,
+            "std": 6.098186911679014,
+            "min": 15.96,
+            "25%": 26.29625,
+            "50%": 30.4,
+            "75%": 34.69375,
+            "max": 53.13
+        },
+        "children": {
+            "count": 1338.0,
+            "mean": 1.0949177877429,
+            "std": 1.205492739781914,
+            "min": 0.0,
+            "25%": 0.0,
+            "50%": 1.0,
+            "75%": 2.0,
+            "max": 5.0
+        },
+        "charges": {
+            "count": 1338.0,
+            "mean": 13270.422265141257,
+            "std": 12110.011236694001,
+            "min": 1121.8739,
+            "25%": 4740.28715,
+            "50%": 9382.033,
+            "75%": 16639.912515,
+            "max": 63770.42801
+        }
+    },
+    "missing_values": {}
+}

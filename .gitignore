@@ -42,15 +42,7 @@ htmlcov/
 # Jupyter Notebook
 .ipynb_checkpoints/
 
-# My custom additions
-# Ignore downloaded dataset (if not explicitly tracked)
-data/insurance.csv
 
-# Ignore compiled models and results from local runs
-# These are handled by the script creating models_v3 and results_v3
-# If you want to track them, remove these lines.
-models_v3/
-results_v3/
 
 # Explicitly ignore Conda environment folder if created within the project
 m_c_env/ # ADDITION: Explicitly ignore this Conda environment folder
