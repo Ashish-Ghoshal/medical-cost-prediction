@@ -165,7 +165,7 @@ This repository presents a comprehensive machine learning project aimed at predi
 
 1.  **Clone the Repository:**
     
-        git clone https://github.com/your_username/medical-cost-prediction.git
+        git clone https://github.com/Ashish-Ghoshal/medical-cost-prediction.git
         cd medical-cost-prediction
         
     
